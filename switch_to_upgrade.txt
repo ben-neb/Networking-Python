@@ -1,1 +1,0 @@
-#list all your Switch/Router IPs which you want to upgrade.
