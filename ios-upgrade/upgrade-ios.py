@@ -41,9 +41,9 @@ def download_ios(ios_image, ios_md5): #downloading from TFTP server and verify h
     if device.send_command('\n', expect_string=r"!") or device.send_command('\n',
                                                                             expect_string=r".") or device.send_command(
             '\n', expect_string=r"O"):
-        print('running after 10min')
+        print('running after 15min')
     print('sleeping 10')
-    time.sleep(800) #Script is paused, while downloading IOS from tftp Server
+    time.sleep(900) #Script is paused, while downloading IOS from tftp Server
     verify_hash = device.send_command('verify /md5 flash:/' + ios_image, delay_factor=10)
     if ios_md5 in verify_hash:
         config_switch(ios_image)
