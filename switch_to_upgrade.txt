@@ -1,1 +1,1 @@
-#Delete this line and list all your Switch/Router IPs which you want to download.
+#list all your Switch/Router IPs which you want to upgrade.
