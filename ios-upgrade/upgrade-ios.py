@@ -100,7 +100,7 @@ def validate_date(valid_date):
         return True
     return False
 
-with open('switch_to_upgrade') as f:
+with open('to_upgrade') as f:
     for switch in f:
         try:
             device = ConnectHandler(device_type='cisco_ios', ip=switch, username=username, password=pswd)
